@@ -1,0 +1,30 @@
+{
+  "name": "scroll-scene-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reusable scroll-driven animation website template. First skin: Music for Vegans.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "test": "node --experimental-strip-types --test src/engine/*.test.ts",
+    "media": "python3 tools/render_media.py",
+    "wordmark": "python3 tools/build_wordmark.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashakhad/scroll-scene-kit.git"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/node": "^26.6.11",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.4.0"
+  }
+}
